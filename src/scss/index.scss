@@ -141,10 +141,18 @@ body {
   background-color: $background;
 }
 
-#root {
+app-root {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 16px;
+}
+
+app-header {
+  grid-column: span 12;
+}
+
+app-footer {
+  grid-column: 10 / 13;
 }
 
 .box-shadow {
