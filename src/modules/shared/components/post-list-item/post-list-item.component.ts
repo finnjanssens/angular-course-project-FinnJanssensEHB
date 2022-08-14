@@ -22,6 +22,7 @@ export class PostListItemComponent implements OnInit {
   };
 
   public redirectUrl: string = ``;
+  public showMoreActions: boolean = false;
 
   constructor() {}
 

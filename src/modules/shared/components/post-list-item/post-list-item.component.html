@@ -16,8 +16,12 @@
     <span aria-hidden="true" data-icon="&#xe904;"></span>
     <span aria-hidden="true" data-icon="&#xe905;"></span>
     <div class="more-actions-toggle">
-      <span aria-hidden="true" data-icon="&#xe906;"></span>
-      <div *ngIf="false" class="more-actions-container box-shadow">
+      <span
+        aria-hidden="true"
+        data-icon="&#xe906;"
+        (click)="showMoreActions = !showMoreActions"
+      ></span>
+      <div *ngIf="showMoreActions" class="more-actions-container box-shadow">
         <div>
           <span aria-hidden="true" data-icon="&#xe901;"></span>
           <p>Save</p>
