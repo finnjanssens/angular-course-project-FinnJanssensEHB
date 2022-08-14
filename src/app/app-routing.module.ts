@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SubredditComponent } from 'src/modules/subreddit/subreddit.component';
+import { SubredditComponent } from 'src/modules/shared/components/subreddit/subreddit.component';
 const routes: Routes = [{ path: 'r/:name', component: SubredditComponent }];
 
 @NgModule({

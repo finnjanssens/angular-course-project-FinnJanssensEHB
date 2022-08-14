@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from '../modules/layout/components/header/header.component';
 import { FooterComponent } from '../modules/layout/components/footer/footer.component';
 import { SearchComponent } from '../modules/shared/components/search/search.component';
-import { SubredditComponent } from '../modules/subreddit/subreddit.component';
+import { SubredditComponent } from '../modules/shared/components/subreddit/subreddit.component';
+import { SubredditInfoComponent } from '../modules/shared/components/subreddit-info/subreddit-info.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SubredditComponent } from '../modules/subreddit/subreddit.component';
     FooterComponent,
     SearchComponent,
     SubredditComponent,
+    SubredditInfoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

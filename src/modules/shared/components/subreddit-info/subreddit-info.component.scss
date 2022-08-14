@@ -1,0 +1,72 @@
+:host {
+  padding: 0.5em;
+  margin: auto;
+  background-color: #fafafa;
+  border-radius: 15px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 5fr 2fr 3fr;
+  column-gap: 10px;
+  align-items: center;
+  box-shadow: 1px 1px 7px 0px rgb(0 0 0 / 20%);
+}
+
+.info-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .info-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      height: 50px;
+      margin-right: 1em;
+      box-shadow: 1px 1px 7px 0px rgb(0 0 0 / 20%);
+      border-radius: 50%;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+  }
+  .info-created p {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+}
+
+.members-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
+
+.join-btn {
+  display: flex;
+  align-items: center;
+  button {
+    width: 90%;
+    background-color: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 0.3em 1em;
+    font-weight: 600;
+    font-size: 1em;
+    &:hover {
+      border: none;
+      background-color: black;
+      color: white;
+    }
+  }
+}
