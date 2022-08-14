@@ -1,4 +1,4 @@
-<div class="votes"></div>
+<app-votes [votes]="post.score"></app-votes>
 <div class="post-content-container">
   <p *ngIf="post.flair" class="flair">{{ post.flair }}</p>
   <a class="linkContainer" [href]="redirectUrl">

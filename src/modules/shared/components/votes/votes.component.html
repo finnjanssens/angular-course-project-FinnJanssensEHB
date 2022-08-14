@@ -1,0 +1,13 @@
+<span
+  aria-hidden="true"
+  data-icon="&#xe907;"
+  [class]="upvote ? 'orange' : ''"
+  (click)="upVote()"
+></span>
+<p [class]="upvote || downvote ? 'orange' : ''">{{ votes }}</p>
+<span
+  aria-hidden="true"
+  data-icon="&#xe908;"
+  [class]="downvote ? 'orange' : ''"
+  (click)="downVote()"
+></span>

@@ -26,7 +26,6 @@ export class PostListItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.post);
     this.redirectUrl = `https://frontend-reddit-redesign.web.app/r/${this.post.subreddit}/${this.post.id}`;
   }
 }
