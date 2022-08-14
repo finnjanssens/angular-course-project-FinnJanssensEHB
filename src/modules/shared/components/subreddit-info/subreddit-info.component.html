@@ -22,4 +22,6 @@
     <p>Online</p>
   </div>
 </div>
-<div class="join-btn"><button>Join</button></div>
+<div [class]="joined ? 'joined-btn' : 'join-btn'" (click)="join()">
+  <button>{{ btnText }}</button>
+</div>

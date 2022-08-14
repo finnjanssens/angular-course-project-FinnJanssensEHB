@@ -23,6 +23,8 @@ export class SubredditInfoComponent implements OnInit {
     membersOnline: '',
     logoSrc: '',
   };
+  public btnText: string = 'join';
+  public joined: boolean = false;
   constructor(private route: ActivatedRoute) {}
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
@@ -42,5 +44,15 @@ export class SubredditInfoComponent implements OnInit {
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0jegsukeSc1DL3RPii_tDNLQClM7dn-qwkA&usqp=CAU';
       });
     });
+  }
+
+  join() {
+    if (this.joined) {
+      this.btnText = 'join';
+      this.joined = false;
+    } else {
+      this.btnText = 'joined';
+      this.joined = true;
+    }
   }
 }

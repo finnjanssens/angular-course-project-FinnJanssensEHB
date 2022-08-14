@@ -66,9 +66,27 @@
     font-weight: 600;
     font-size: 1em;
     &:hover {
-      border: none;
       background-color: black;
       color: white;
+    }
+  }
+}
+
+.joined-btn {
+  display: flex;
+  align-items: center;
+  button {
+    width: 90%;
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+    border-radius: 20px;
+    padding: 0.3em 1em;
+    font-weight: 600;
+    font-size: 1em;
+    &:hover {
+      background-color: white;
+      color: black;
     }
   }
 }
