@@ -45,6 +45,5 @@ export class VotesComponent implements OnInit {
       this.downvote = false;
       this.upvote = false;
     }
-    console.log(this.votes);
   }
 }
