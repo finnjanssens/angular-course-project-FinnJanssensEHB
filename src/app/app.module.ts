@@ -8,7 +8,7 @@ import { FooterComponent } from '../modules/layout/components/footer/footer.comp
 import { SearchComponent } from '../modules/shared/components/search/search.component';
 import { SubredditComponent } from '../modules/shared/components/subreddit/subreddit.component';
 import { SubredditInfoComponent } from '../modules/shared/components/subreddit-info/subreddit-info.component';
-
+import { PostListItemComponent } from 'src/modules/shared/components/post-list-item/post-list-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +17,7 @@ import { SubredditInfoComponent } from '../modules/shared/components/subreddit-i
     SearchComponent,
     SubredditComponent,
     SubredditInfoComponent,
+    PostListItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

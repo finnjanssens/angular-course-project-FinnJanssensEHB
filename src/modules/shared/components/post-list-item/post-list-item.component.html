@@ -1,0 +1,39 @@
+<div class="votes"></div>
+<div class="post-content-container">
+  <p *ngIf="post.flair" class="flair">{{ post.flair }}</p>
+  <a class="linkContainer" [href]="redirectUrl">
+    <h2>
+      {{
+        post.title.length > 50
+          ? post.title.substring(0, 49) + "..."
+          : post.title
+      }}
+    </h2>
+    <p>r/{{ post.subreddit }} - Posted by u/{{ post.author }} x hours ago</p>
+  </a>
+  <div class="post-actions-container">
+    <span aria-hidden="true" data-icon="&#xe903;"></span>
+    <span aria-hidden="true" data-icon="&#xe904;"></span>
+    <span aria-hidden="true" data-icon="&#xe905;"></span>
+    <div class="more-actions-toggle">
+      <span aria-hidden="true" data-icon="&#xe906;"></span>
+      <div *ngIf="false" class="more-actions-container box-shadow">
+        <div>
+          <span aria-hidden="true" data-icon="&#xe901;"></span>
+          <p>Save</p>
+        </div>
+        <div>
+          <span aria-hidden="true" data-icon="&#xe902;"></span>
+          <p>Hide</p>
+        </div>
+        <div>
+          <span aria-hidden="true" data-icon="&#xe909;"></span>
+          <p>Report</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="post.thumbnail.startsWith('http')" class="post-image-container">
+  <img [src]="post.thumbnail" alt="" />
+</div>
